@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Health Assessment</title>
+    <title>Localstorage - Task Manager</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
@@ -266,115 +266,8 @@
               >
             </div>
           </div>
-          <div class="form-section">
-            <div class="row">
-              <div class="col-3">
-                <label class="form-label">Mother alive?</label>
-              </div>
-              <div class="form-check col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="mother"
-                  id="motherYes"
-                  value="yes"
-                />
-                <label class="form-check-label" for="motherYes">Yes</label>
-              </div>
-              <div class="form-check col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="mother"
-                  id="motherNo"
-                  value="no"
-                />
-                <label class="form-check-label" for="motherNo">No</label>
-              </div>
 
-              <!-- Hidden section that appears only if "No" is selected -->
-              <div id="motherDetails" class="row mt-3" style="display: none">
-                <div class="mb-3 col-4">
-                  <label for="mother-age" class="form-label"
-                    >Age at death:</label
-                  >
-                  <input
-                    type="text"
-                    id="mother-age"
-                    name="mother-age"
-                    class="form-control"
-                  />
-                </div>
-
-                <div class="mb-3 col-8">
-                  <label for="cause-of-death-mother" class="form-label"
-                    >Cause of death:</label
-                  >
-                  <input
-                    type="text"
-                    id="cause-of-death-mother"
-                    name="cause-of-death-mother"
-                    class="form-control"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="form-section">
-            <div class="row">
-              <div class="col-3">
-                <label class="form-label">Father alive?</label>
-              </div>
-              <div class="form-check col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="father"
-                  id="fatherYes"
-                  value="yes"
-                />
-                <label class="form-check-label" for="fatherYes">Yes</label>
-              </div>
-              <div class="form-check col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="father"
-                  id="fatherNo"
-                  value="no"
-                />
-                <label class="form-check-label" for="fatherNo">No</label>
-              </div>
-
-              <!-- Hidden section that appears only if "No" is selected -->
-              <div id="fatherDetails" class="row mt-3" style="display: none">
-                <div class="mb-3 col-4">
-                  <label for="father-age" class="form-label"
-                    >Age at death:</label
-                  >
-                  <input
-                    type="text"
-                    id="father-age"
-                    name="father-age"
-                    class="form-control"
-                  />
-                </div>
-
-                <div class="mb-3 col-8">
-                  <label for="cause-of-death-father" class="form-label"
-                    >Cause of death:</label
-                  >
-                  <input
-                    type="text"
-                    id="cause-of-death-father"
-                    name="cause-of-death-father"
-                    class="form-control"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <h4 class="pt-4">Significant family history</h4>
+          <h4 class="pt-4">Past Medical history</h4>
           <hr />
           <div class="row">
             <div class="col-2">
@@ -10827,7 +10720,7 @@
           addSection(sectionTitle, formData[sectionTitle]);
         }
 
-        pdf.save("patient_assessment.pdf");
+        pdf.save("health_assessment.pdf");
       }
     </script>
   </body>
